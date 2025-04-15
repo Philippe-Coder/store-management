@@ -49,7 +49,7 @@ def init_db():
             # Renomme l’ancienne table
             cursor.execute("ALTER TABLE ventes RENAME TO ventes_old")
 
-        # Crée la nouvelle table ventes avec date_vente en TEXT
+        # Crée la nouvelle table ventes
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS ventes (
             id INTEGER PRIMARY KEY AUTOINCREMENT,

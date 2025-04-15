@@ -95,8 +95,8 @@ def update_vente(vente_id, date, produit_id, client_id, quantite, montant):
             int(client_id),
             int(quantite),
             float(montant),
-            int(vente_id)  # Note: pas de virgule après le dernier élément
-        )  # <-- Cette parenthèse ferme le tuple
+            int(vente_id)
+        )
 
         cursor = conn.cursor()
         cursor.execute("""
